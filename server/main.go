@@ -1,12 +1,13 @@
 package main
 
 import (
-    "context"
-    "log"
-    "time"
+	"context"
+	"fmt"
+	"log"
+	"net"
 
-    pb "example.com/grpc-demo/proto"
-    "google.golang.org/grpc"
+	pb "example.com/grpc-demo/proto"
+	"google.golang.org/grpc"
 )
 
 type server struct {
